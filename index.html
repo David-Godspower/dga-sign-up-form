@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D.G.A. Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo-box">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="intro">
+                <p>Welcome to the D.G.A. Sign-Up Form. Please fill in your details below to create an account.</p>
+            </div>
+            <form action="" method="" class="column">
+            <fieldset>
+                <legend>Sign-Up Form</legend>
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="David" pattern="[A-Za-z\s]+" title="Please use letters only A-Z or a-z" minlength="3" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Ajala" pattern="[A-Za-z\s]+" title="Please use letters only A-Z or a-z" minlength="3" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" placeholder="+234 000 000 0000" pattern="\+234[0-9]{10}" title="Phone number should start with +234 followed by 10 digits" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="********" minlength="8" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="confirm-password" id="confirm-password" name="confirm-password" placeholder="********" minlength="8" required>
+            </div>
+            <button type="submit">Create Account</button>
+            <p>Already have an account?<a href="#">Log in</a></p>
+            </fieldset>
+        </form>
+        </div>
+    </div>
 </body>
 </html>

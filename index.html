@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D.G.A. Sign Up Form</title>
+    <title>Responsive Authentication UI</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -19,7 +19,7 @@
             <div class="right-panel">
                 <form class="form-container" action="thankyou.html">
                     <fieldset>
-                        <legend>Sign-Up Form</legend>
+                        <legend>Responsive Authentication UI</legend>
                         <div class="form-group">
                             <label for="first-name">First Name:</label>
                             <input type="text" id="first-name" name="first-name" placeholder="David" pattern="[A-Za-z\s]+" title="Please use letters only A-Z or a-z" minlength="3"  autocomplete="given-name"required>
@@ -56,7 +56,7 @@
         </div>
     </div>
     <footer>
-        <p>David Godspower Ajala (D.G.A.) &copy 2025</p><br>
+        <p>David Godspower Ajala (D.G.A.) &copy;<span id="year"></span></p><br>
             <!--<a href="https://github.com/david-godspower" target="_blank"><i class="fab fa-github icons" id="github"></i></a>-->
             <a href="https://www.linkedin.com/in/david-ajala-a93b862a1/" target="_blank"><i class="fab fa-linkedin icons" id="linkedin"></i></a>
              <a href="mailto:ajaladavid11@gmail.com" target="_blank"><i class="fas fa-envelope icons" id="gmail"></i></a>
@@ -137,6 +137,9 @@ setupToggle('confirm-password', 'toggle-password-2');
       }
       phoneNumberInput.value = formattedValue;
     });
+
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
